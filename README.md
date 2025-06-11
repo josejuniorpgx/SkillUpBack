@@ -25,10 +25,6 @@ poetry shell
 
 # Setup environment variables
 cp .env.example .env
-
-# Create required files
-touch app/__init__.py app/database/__init__.py app/core/__init__.py
-mkdir -p scripts && touch scripts/__init__.py
 ```
 
 ### 3. Setup Database
