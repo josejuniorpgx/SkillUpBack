@@ -1,4 +1,3 @@
-# app/database/session.py
 from typing import Generator
 from sqlalchemy.orm import Session
 from app.database.connection import SessionLocal

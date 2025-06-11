@@ -1,5 +1,3 @@
-
-# FILE: app/api/v1/endpoints/surveys.py
 """
 Survey endpoints - Creation and Analytics
 """

@@ -1,5 +1,3 @@
-
-# FILE: app/api/v1/endpoints/responses.py
 """
 Response endpoints - Survey completion and submission
 """

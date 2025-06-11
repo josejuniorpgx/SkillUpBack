@@ -1,4 +1,3 @@
-# app/models/response.py
 from sqlalchemy import Column, Integer, ForeignKey, CheckConstraint, DateTime
 from sqlalchemy.orm import relationship
 from sqlalchemy.dialects.postgresql import UUID

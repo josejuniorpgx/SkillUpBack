@@ -1,4 +1,3 @@
-# app/models/survey.py
 from sqlalchemy import Column, String, Text, Enum as SQLEnum
 from sqlalchemy.orm import relationship
 from enum import Enum
