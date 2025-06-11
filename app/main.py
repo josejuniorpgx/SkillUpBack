@@ -1,6 +1,7 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
+from app.api import api_router
 from app.config import settings
 
 
@@ -36,6 +37,18 @@ async def root():
 async def health_check():
     return {"status": "healthy", "message": "API is running"}
 
-# TODO: Add Routes
-# from app.api.v1.api import api_router
-# app.include_router(api_router, prefix=settings.API_V1_STR)
+# Include API routes
+app.include_router(api_router, prefix="/api/v1")
+
+
+@app.get("/")
+async def root():
+    """Health check endpoint"""
+    return {"message": "Leadership Feedback Survey API", "status": "running"}
+
+
+@app.get("/health")
+async def health_check():
+    """Health check endpoint"""
+    return {"status": "healthy"}
+
